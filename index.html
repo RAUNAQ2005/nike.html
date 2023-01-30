@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            width: 100vw;
+            color: #ffffff;
+        background-color: red;
+        font-family: 'Titillium Web', sans-serif;
+
+            }
+            .navbar{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                background-color: red;
+                padding: 10px 0;
+            }
+            .navbar a{
+
+                text-decoration: none;
+                color: inherit;
+
+            }
+            .logo {
+                margin-left: 10px;
+
+            }
+            .navbar img{
+                width: 50px;
+                overflow: hidden;
+            }
+            .list{
+                list-style: none;
+                display: flex;
+                gap: 100px;
+            }
+            .list li a:hover{
+                background-color: #eee;
+                padding: 15px;
+                transition: 400ms;
+                color: #000;
+
+            }
+            #toogle, .navbar label{
+                display: none;
+                
+
+
+            }
+ 
+#main {
+width: 100vw;
+height: 490px;
+background-color: red;
+display: flex;
+}
+.container-1 {
+    width: 95%;
+    height:100% ;
+    background-color: red;
+    justify-content: center ;
+align-items: center;
+position: relative;
+}
+.background-img {
+    width:1200px ;
+    z-index:1 ;
+position: absolute;
+background-color: red;
+}
+.forgrond-img {
+    width: 400px;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+ background-color: red;
+height: 200px;}
+.container-2 {
+    width:5% ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:red ;
+}
+.container-2 a {
+    text-transform: uppercase;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 0.8rem;
+
+}
+.container-2 span {
+
+    margin: 40px 40px;
+}
+#low-end {
+    padding: 10px 0;
+    width: 100vw;
+    overflow: hidden;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+}
+.left-case {
+    width: 350px;
+    background-color: red;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    box-shadow: 4px 3px 4px 1px brown;
+    cursor: pointer;
+    transition: 500ms;
+
+}
+.left-case img {
+    width: 60px;
+}
+
+
+@media screen and (max-width:650px) {
+    body {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+         padding: 10px;
+         gap: 20px;
+    
+    
+    } 
+
+
+    .navbar label 
+    
+    {
+        display: inline-flex;
+align-items: center;
+cursor: pointer;
+    }
+    #toggle:checked~.menu {
+        max-height: 100%;
+
+    }
+    .navbar {
+        padding: 0;
+
+    }
+    .logo {
+        margin-left: 0px;
+
+    }
+    #main{
+        display: block;
+        width: 100%;
+
+    
+    }
+.container-1 {
+    width: 100%;
+}
+.container-2 {
+    display: none;
+
+}
+.background-img {
+    width: 450px;
+}
+.forgrond-img{
+    width: 450px;
+
+}
+#low-end {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+}
+    
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKZXyxUqRnpdbq6Q8EonhA8PvjtnU03Jjfpw&usqp=CAU"class="logo" >
+        <input type="checkbox" id="toggle">
+    <label for="toggle"><i class="fa-solid fa-bars"></i></label>
+    <div class="menu">
+        <ul class="list">
+            <li> <a href="">MEN</a></li>
+            <li> <a href="">WOMEN</a></li>
+            <li> <a href="">KIDS</a></li>
+            <li> <a href="">CUSTOMISE</a></li>
+            <li> <a href="">SALES</a></li>
+            <li> <a href="">SNKS</a></li>
+
+        </ul>
+
+    </div>
+    
+    </nav>
+    <section id="main">
+        <div class="container-1" >
+            <img src="https://i.pinimg.com/originals/ea/2b/28/ea2b2865fd5a1beefcc7f8022c3f8aa5.jpg" class="background-img" alt="">
+            <img src="https://i.pinimg.com/originals/e5/9f/ce/e59fce44ac23147f5e500fa8f75203af.jpg" class="forgrond-img" alt="">
+            
+        </div>
+        <div class="container-2">
+            <span></span>
+            <a href="">TWITTER</a>
+            <a href="">FACEBOOK</a>
+            <a href="">INSTAGRAM</a>
+        </div>
+    </section>
+    <section id="low-end">
+        <div class="left-case">
+            <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/c48a375a-143e-4434-84df-b37e2c0d88cb/air-jordan-1-2022-lost-and-found-chicago-the-inspiration-behind-the-design.jpg"alt="">
+            <div></div>
+            <span>
+                <p>NIKE AIR 037 -BASE B.</p>
+                <p> INR 45550</p>
+            </span>
+        </div>
+        <div class="right-case">
+            <img src="https://preview.redd.it/jordan-1-lost-and-found-but-using-the-85-cut-instead-v0-hsp0lr4j8gy91.jpg?width=640&crop=smart&auto=webp&s=aac50c4074bb88b45ac93bfa7e55cf90ac08514f"  >
+            <div></div>
+            <span>
+                <p>NIKE AIR 044 -BASE B.</p>
+                <p> INR 5499</p>
+            </span>
+        </div>
+
+
+
+
+
+
+
+    </section>
+</body>
+</html>
