@@ -16,8 +16,9 @@
         body{
             width: 100vw;
             color: #ffffff;
-        background-color: red;
+        
         font-family: 'Titillium Web', sans-serif;
+      
 
             }
             .navbar{
@@ -25,13 +26,14 @@
                 flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-around;
-                background-color: red;
+                background-color:white;
                 padding: 10px 0;
+                text-decoration: #000;
             }
             .navbar a{
 
-                text-decoration: none;
-                color: inherit;
+                text-decoration: wavy;
+                color: black;
 
             }
             .logo {
@@ -64,29 +66,35 @@
 #main {
 width: 100vw;
 height: 490px;
-background-color: red;
+
 display: flex;
 }
 .container-1 {
-    width: 95%;
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/4c663418-9349-4e6b-9cb0-2268a5996982/nike-just-do-it.jpg) ;
+    
+    background-repeat: no-repeat;
+    width: 200%;
     height:100% ;
-    background-color: red;
-    justify-content: center ;
+    
+    
+    align-items: center;
 align-items: center;
 position: relative;
 }
 .background-img {
+    
     width:1200px ;
     z-index:1 ;
 position: absolute;
-background-color: red;
+background-color: white;
+
 }
 .forgrond-img {
     width: 400px;
     z-index: 2;
     position: absolute;
     align-items: center;
- background-color: red;
+ background-color: white;
 height: 200px;}
 .container-2 {
     width:5% ;
@@ -95,14 +103,14 @@ height: 200px;}
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color:red ;
+    background-color:white ;
 }
 .container-2 a {
     text-transform: uppercase;
     text-orientation: mixed;
     writing-mode: vertical-rl;
     text-decoration: none;
-    color: #ddd;
+    color:black;
     font-size: 0.8rem;
 
 }
@@ -110,33 +118,7 @@ height: 200px;}
 
     margin: 40px 40px;
 }
-#low-end {
-    padding: 10px 0;
-    width: 100vw;
-    overflow: hidden;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
 
-}
-.left-case {
-    width: 350px;
-    background-color: red;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    box-shadow: 4px 3px 4px 1px brown;
-    cursor: pointer;
-    transition: 500ms;
-
-}
-.left-case img {
-    width: 60px;
-}
 
 
 @media screen and (max-width:650px) {
@@ -166,6 +148,7 @@ height: 200px;}
         display: inline-flex;
 align-items: center;
 cursor: pointer;
+background-color: #000;
     }
     #toggle:checked~.menu {
         max-height: 100%;
@@ -209,7 +192,17 @@ cursor: pointer;
 }
     
 
-
+#div{
+    text-align: center;
+    margin-left: 600px;
+    color: #000;
+}
+#div1{
+margin-left: -900px;
+    text-align: center;
+    color: black;
+    margin-top: -220px;
+}
 
 
 
@@ -222,12 +215,12 @@ cursor: pointer;
     <label for="toggle"><i class="fa-solid fa-bars"></i></label>
     <div class="menu">
         <ul class="list">
-            <li> <a href="">MEN</a></li>
-            <li> <a href="">WOMEN</a></li>
-            <li> <a href="">KIDS</a></li>
-            <li> <a href="">CUSTOMISE</a></li>
-            <li> <a href="">SALES</a></li>
-            <li> <a href="">SNKS</a></li>
+            <li> <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok">MEN</a></li>
+            <li> <a href="https://www.nike.com/in/women">WOMEN</a></li>
+            <li> <a href="https://www.nike.com/in/w/boys-running-shoes-1onraz37v7jzy7ok">KIDS</a></li>
+            <li> <a href="https://www.nike.com/in/nike-by-you">CUSTOMISE</a></li>
+            <li> <a href="https://www.nike.com/in/w/womens-sale-clothing-3yaepz5e1x6z6ymx6">SALES</a></li>
+            <li> <a href="https://www.nike.com/in/launch">SNKS</a></li>
 
         </ul>
 
@@ -236,8 +229,9 @@ cursor: pointer;
     </nav>
     <section id="main">
         <div class="container-1" >
-            <img src="https://i.pinimg.com/originals/ea/2b/28/ea2b2865fd5a1beefcc7f8022c3f8aa5.jpg" class="background-img" alt="">
-            <img src="https://i.pinimg.com/originals/e5/9f/ce/e59fce44ac23147f5e500fa8f75203af.jpg" class="forgrond-img" alt="">
+            <img src="" class="background-img" alt="">
+            
+            
             
         </div>
         <div class="container-2">
@@ -247,30 +241,40 @@ cursor: pointer;
             <a href="">INSTAGRAM</a>
         </div>
     </section>
-    <section id="low-end">
-        <div class="left-case">
-            <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/c48a375a-143e-4434-84df-b37e2c0d88cb/air-jordan-1-2022-lost-and-found-chicago-the-inspiration-behind-the-design.jpg"alt="">
-            <div></div>
-            <span>
-                <p>NIKE AIR 037 -BASE B.</p>
-                <p> INR 45550</p>
-            </span>
-        </div>
-        <div class="right-case">
-            <img src="https://preview.redd.it/jordan-1-lost-and-found-but-using-the-85-cut-instead-v0-hsp0lr4j8gy91.jpg?width=640&crop=smart&auto=webp&s=aac50c4074bb88b45ac93bfa7e55cf90ac08514f"  >
-            <div></div>
-            <span>
-                <p>NIKE AIR 044 -BASE B.</p>
-                <p> INR 5499</p>
-            </span>
-        </div>
+    
+                          <p> nike free metcon4</p>
+                          <h3>GO ALL OUT</h3>
+                        <div>
+  <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_567,c_limit/67097e17-1358-4acb-b58c-8238268332e0/nikecourt-air-zoom-pro-hard-court-tennis-shoes-6XpsqH.png" alt="" > 
+
+ <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_567,c_limit/1a625a8b-0ea7-4d49-bc45-1e7bda3ed52a/nikecourt-air-zoom-vapor-pro-2-hard-court-tennis-shoes-8cpW40.png" alt="">   
+
+<img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_567,c_limit/e834b5a9-c60e-41d8-a7b1-c18cba369a4a/nikecourt-air-zoom-lite-3-tennis-shoes-TNSHS6.png" alt="">     
 
 
+ <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_567,c_limit/b2c37b69-227a-4a77-bcfd-b2246093196b/nikecourt-air-zoom-gp-turbo-osaka-hard-court-tennis-shoes-pWNPpZ.png" alt=""> 
+ <br>
+ <br>
+ 
+ <div id="div">
+                 <b style="font-size: 30px;">icons</b> <br> <br>
+          <b>     Air Force 1  </b> <br>
+             <b>   Huarache </b> <br>
+             <b>   Air Max 90 </b> <br>
+            <b>     Air Max 95  </b> <br>
 
+            </div>
+            <br>   <br>
 
+            <div id="div1">
+                <p style="font-size: 30px;">All shoes</p> <br>      
+                <p>     Custom shoes  </p> 
+                   <p>   jordan shoes </p> 
+                   <p>   Running shoes </p> 
+                  <p>     Gym shoes </p>  
 
+            </div>
+ </b>
 
-
-    </section>
 </body>
 </html>
